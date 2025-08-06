@@ -1,6 +1,6 @@
 import requests  
 
-API_KEY = "283338d867762696f72b49a5c91aa9c9"
+API_KEY = "your_key"
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
 city = input("Enter city: ")
@@ -16,3 +16,4 @@ if response.status_code == 200:
     print(f"Weather in {city}: {weather}, {temp}°C, {humidity}% humidity")
 else:
     print("City not found.")
+
